@@ -1,0 +1,181 @@
+/* =====================
+   RESET
+===================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====================
+   BODY
+===================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #1f2937;
+    max-width: 800px;
+    margin: auto;
+    padding: 30px 20px;
+    line-height: 1.7;
+}
+
+
+/* =====================
+   JUDUL
+===================== */
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #111827;
+}
+
+h2 {
+    margin: 25px 0 10px;
+    font-size: 20px;
+    color: #2563eb;
+}
+
+
+/* =====================
+   FORM & LABEL
+===================== */
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 500;
+    color: #374151;
+}
+
+
+/* =====================
+   INPUT & SELECT
+===================== */
+
+input,
+select,
+button {
+    font-size: 14px;
+    font-family: inherit;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+select {
+    width: 100%;
+    max-width: 420px;
+    padding: 10px 12px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    background: #ffffff;
+    transition: 0.3s;
+}
+
+
+/* efek fokus */
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.25);
+}
+
+
+/* radio & checkbox */
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+
+/* =====================
+   BUTTON
+===================== */
+
+button {
+    padding: 10px 18px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 8px;
+    transition: 0.3s;
+}
+
+
+/* submit */
+
+button[type="submit"] {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+button[type="submit"]:hover {
+    background: #1d4ed8;
+}
+
+
+/* reset */
+
+button[type="reset"] {
+    background: #e5e7eb;
+    color: #1f2937;
+}
+
+button[type="reset"]:hover {
+    background: #d1d5db;
+}
+
+
+/* =====================
+   ATRIBUT KHUSUS
+===================== */
+
+input:disabled {
+    background: #e5e7eb;
+    color: #6b7280;
+    cursor: not-allowed;
+}
+
+input[readonly] {
+    background: #f1f5f9;
+}
+
+
+/* =====================
+   HR
+===================== */
+
+hr {
+    margin: 30px 0;
+    border: none;
+    border-top: 1px solid #d1d5db;
+}
+
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 15px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+}
