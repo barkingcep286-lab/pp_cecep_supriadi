@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio Cecep Supriadi</title>
+    <link rel="stylesheet" href="portofolio.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="brand">
+                    <img src="foto.jpeg" alt="Foto Profil (ganti dengan foto Anda)">
+                    <div>
+                        <h1>Cecep Supriadi</h1>
+                        <div style="font-size:13px;color:var(--muted)">Mahasiswa Informatika Universitas Mayasari Bakti</div>
+                    </div>
+                </div>
+                <div class="navlinks">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                    <a href="Tugas.html">Kumpulan Tugas</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="intro">
+                <h2>Cecep <strong>Supriadi</strong></h2>
+                <p>Saya adalah mahasiswa Informatika di Universitas Mayasari Bakti dengan hobi berolahraga. Saya tertarik pada pengembangan web, data, dan desain antarmuka pengguna.</p>
+                <div class="cta">
+                    <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hubungi Saya</button>
+                    <a class="btn btn-ghost" href="#projects">Lihat Proyek</a>
+                </div>
+
+                <section id="about" style="margin-top:20px">
+                    <h3>Tentang Saya</h3>
+                    <p style="color:var(--muted)"></p>Saya sedang menempuh studi S1 Informatika, fokus pada pengembangan web dan analisis data. Aktif sebagai anggota Hmpunan (HMIF) dan aktif dalam UKM olahraga.</p>
+                </section>
+            </div>
+
+            <aside class="profile-card">
+                <img src="foto.jpeg" alt="Foto Profil (ganti)">
+                <div class="meta">
+                    <div>📍 Indonesia</div>
+                    <div>✉️ barkingcep286@gmail.com</div>
+                </div>
+            </aside>
+        </section>
+
+        <section id="skills">
+            <h3>Keahlian</h3>
+            <div class="grid-3" style="margin-top:12px">
+                <div class="card">
+                    <h4>Pengembangan Web</h4>
+                    <ul>
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>React.js / Vue.js (dasar)</li>
+                        <li>Responsive design & accessibility</li>
+                        <li>Configurasi MIkrotik</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Data & Backend</h4>
+                    <ul>
+                        <li>Python, SQL</li>
+                        <li>Analisis data & visualisasi</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Tools</h4>
+                    <ul>
+                        <li>Git, VSCode</li>
+                        <li>Figma (UI/UX)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h3>Proyek Pilihan</h3>
+            <div class="projects" style="margin-top:12px">
+                <div class="card">
+                    <img class="project-img" src="img/proyek/proyek1.jpg" alt="Project 1">
+                    <h4>Nama Proyek 1</h4>
+                    <p style="color:var(--muted)">Projecet membuat sebuah aplikasi untuk pemantauan kualitas udara secara digital</p>
+                </div>
+                <div class="card">
+                    <img class="project-img" src="img/proyek/proyek2.jpg" alt="Project 2">
+                    <h4>Nama Proyek 2</h4>
+                    <p style="color:var(--muted)">Merancang/Design sebuah jembatan gantung.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h3>Pengalaman & Pendidikan</h3>
+            <div style="display:grid;gap:10px;margin-top:12px">
+                <div class="card">
+                    <h4>Mahasiswa Informatika — Universitas Mayasari Bakti</h4>
+                    <div style="color:var(--muted);font-size:14px">2025 — Sekarang</div>
+                    <p style="margin-top:8px;color:var(--muted)">Mengikuti organisasi HMIF</p>
+                </div>
+                <div class="card">
+                    <h4>Prodi Teknik Informatika</h4>
+                    <div style="color:var(--muted);font-size:14px">Angkatan 2025</div>
+                    <p style="margin-top:8px;color:var(--muted)">Mahasiswa Universitas Mayasari Bakti.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h3>Kontak</h3>
+            <div style="display:flex;gap:18px;margin-top:12px;flex-wrap:wrap">
+                <div class="card" style="flex:1;min-width:260px">
+                    <form onsubmit="event.preventDefault(); alert('Terima kasih — pesan terkirim! (ini demo)')">
+                        <div style="margin-bottom:8px"><label>Nama</label><input placeholder="Nama Anda" required></div>
+                        <div style="margin-bottom:8px"><label>Email</label><input placeholder="Email anda" required></div>
+                        <div style="margin-bottom:8px"><label>Pesan</label><textarea rows="5" placeholder="Tulis pesan..." required></textarea></div>
+                        <button class="btn btn-primary" type="submit">Kirim</button>
+                    </form>
+                </div>
+                <div style="flex:1;min-width:220px">
+                    <div class="card">
+                        <h4>Details</h4>
+                        <p style="color:var(--muted)">Email: barkingcep286@gmail.com<br>Telepon: +62 82217746786<br>Lokasi: Pangandaran, Indonesia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+                <div>© <span id="year"></span> Cecep Supriadi hak cipta</div>
+                <div style="color:var(--muted)">Made in Pangandaran </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                e.preventDefault();
+                const id = a.getAttribute('href').substring(1);
+                const el = document.getElementById(id);
+                if (el) el.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
